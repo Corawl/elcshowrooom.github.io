@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Dooble</title>
+        <link rel="icon" href="/coding project/photos/steam-title-logo.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/coding project/projects.css/Dooble.css">
+        <script src="https://kit.fontawesome.com/bba958b02a.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Zanabazar+Square&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Nunito:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="body">
+        <div class="container" id="blur">
+            <div class="top-line">
+                <a href="elc-steam-en.html">
+                    <div class="btn">
+                        <span class="fa-solid fa-less-than"></span>
+                    </div>
+                </a>
+                    <p class="back-title">BACK</p>
+                <div class="icons">
+                        <img src="photos/play-icon.png" class="play-icon">
+                    <div class="faq-icon-container">
+                        <img src="photos/faq-icon.png" class="faq-icon" onclick="toggle()">
+                    </div>
+                    <div class="lang-container">
+                        <div class="language-icon-container" onclick="toggleMenu()">
+                            <img src="photos/language-icon.png" class="language-icon">
+                            <p class="en">EN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang-popup" id="subMenu">
+                    <a href="Dooble-en.html" target="_blank"  class="lang-icon-submenu" id="lang1">
+                        <img src="photos/language-icon.png" class="lang-icon-submenu-img">
+                        EN
+                    </a>
+                    <a href="Dooble-fr.html" target="_blank" class="lang-icon-submenu">
+                        <img src="photos/language-icon.png" class=lang-icon-submenu-img>
+                        FR
+                    </a>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="photos/IMG_7161 - Copy.JPG" class="img">
+            </div>
+            <div>
+                <h1 class="main-title">DOOBLE</h1>
+                <h2 class="info">PROJECT OVERVIEW</h2>
+                <div class="info-text-container">
+                    <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet facilisis magna etiam tempor orci eu lobortis elementum. Habitant morbi tristique senectus et. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Nisi quis eleifend quam adipiscing vitae. Ut enim blandit volutpat maecenas volutpat. Nulla facilisi nullam vehicula ipsum. Vitae turpis massa sed elementum tempus egestas sed sed. Interdum posuere lorem ipsum dolor sit amet. Consectetur adipiscing elit ut aliquam purus sit. Sit amet dictum sit amet justo. Consectetur adipiscing elit ut aliquam purus sit. Sit amet dictum sit amet justo. Consectetur adipiscing elit ut aliquam purus sit vitae turpis massa sed elementum.</p>
+                </div>
+                <h2 class="name">Tanay</h2>
+            </div>
+        </div>
+        <div id="faqpopup">
+            <p class="faqpopup-title">FAQ</p>
+            <hr class="popup-line">
+            <p class="faq-text">
+                I don't know what to put here take me email<br>844543@pdsb.net
+            </p>
+            <div class="close-button-container">
+                <button class="close-button" onclick="toggle()">Close</button>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function toggle(){
+                var blur = document.getElementById('blur');
+                blur.classList.toggle('active')
+                var faqpopup = document.getElementById('faqpopup');
+                faqpopup.classList.toggle('active')
+            }
+
+            let subMenu = document.getElementById('subMenu');
+
+            function toggleMenu(){
+            subMenu.classList.toggle("open-menu")
+            }
+        </script>
+    </body>
+</html>
